@@ -17,13 +17,7 @@ def bucket_sort(arr)
   bucket.push([])
  end
  arr.each do |i|
-   k=0
-   while k < bucket.length
-     if k == i
-       bucket[k] << i
-     end
-     k+=1
-   end
+       bucket[i] << i
  # 値を一つずつバケツに入れる。バケツ䛾index番号と一致する箇所に値を入れる(eachメソッドを調べてみよう)
  end
 
